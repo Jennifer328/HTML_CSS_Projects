@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Q&A</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <section class="questions">
+        <div class="section-center">
+            <article class="question">
+                <div class="question-title">
+                    <p>
+                        What are the limitations of CSS?
+                    </p>
+
+                    <button class="question-btn">
+                        <span class="plus-icon"><i class="fa-solid fa-circle-plus"></i></span>
+                        <span class="minus-icon"><i class="fa-solid fa-circle-minus"></i></span>
+                    </button>
+                </div>
+
+                <div class="question-text">
+                    <p>Browser Compatibility: Some style selectors are supported and some are not. We have to determine which style is supported or not using the @support selector).
+                        Cross Browser issue: Some selectors behave differently in a different browser).
+                        There is no parent selector: Currently, Using CSS, you can’t select a parent tag.</p>
+
+                </div>
+            </article>
+            <article class="question">
+                <div class="question-title">
+                    <p>
+                        What is a CSS Preprocessor? What are Sass, Less, and Stylus? Why do people use them?
+                    </p>
+
+                    <button class="question-btn">
+                        <span class="plus-icon"><i class="fa-solid fa-circle-plus"></i></span>
+                        <span class="minus-icon"><i class="fa-solid fa-circle-minus"></i></span>
+                    </button>
+                </div>
+
+                <div class="question-text">
+                    <p>A CSS Preprocessor is a tool used to extend the basic functionality of default vanilla CSS through its own scripting language. It helps us to use complex logical syntax like – variables, functions, mixins, code nesting, and inheritance to name a few, supercharging your vanilla CSS.
+
+                        SASS: Sass is the acronym for “Syntactically Awesome Style Sheets”. SASS can be written in two different syntaxes using SASS or SCSS.
+                        LESS: LESS is an acronym for “Leaner Stylesheets”. LESS is easy to add to any javascript projects by using NPM or less.js file. It uses the extension .less.
+                        Stylus: Stylus offers a great deal of flexibility in writing syntax, supports native CSS as well as allows omission of brackets, colons, and semicolons. It doesn’t use @ or $ for defining variables.
+                    </p>
+
+                </div>
+            </article>
+            <article class="question">
+                <div class="question-title">
+                    <p>
+                        What is VH/VW (viewport height/ viewport width) in CSS?
+                    </p>
+
+                    <button class="question-btn">
+                        <span class="plus-icon"><i class="fa-solid fa-circle-plus"></i></span>
+                        <span class="minus-icon"><i class="fa-solid fa-circle-minus"></i></span>
+                    </button>
+                </div>
+
+                <div class="question-text">
+                    <p>It’s a CSS unit used to measure the height and width in percentage with respect to the viewport. It is used mainly in responsive design techniques. The measure VH is equal to 1/100 of the height of the viewport. If the height of the browser is 1000px, 1vh is equal to 10px. Similarly, if the width is 1000px, then 1 vw is equal to 10px.
+
+                    </p>
+
+                </div>
+            </article>
+            <article class="question">
+                <div class="question-title">
+                    <p>
+                        What are Pseudo elements and Pseudo classes?
+                    </p>
+
+                    <button class="question-btn">
+                        <span class="plus-icon"><i class="fa-solid fa-circle-plus"></i></span>
+                        <span class="minus-icon"><i class="fa-solid fa-circle-minus"></i></span>
+                    </button>
+                </div>
+
+                <div class="question-text">
+                    <p>Pseudo-elements allows us to create items that do not normally exist in the document tree, for example ::after.
+                        Pseudo-classes select regular elements but under certain conditions like when the user is hovering over the link.
+                    </p>
+
+                </div>
+            </article>
+            <article class="question">
+                <div class="question-title">
+                    <p>
+                        How do you specify units in the CSS?. What are the different ways to do it?
+                    </p>
+
+                    <button class="question-btn">
+                        <span class="plus-icon"><i class="fa-solid fa-circle-plus"></i></span>
+                        <span class="minus-icon"><i class="fa-solid fa-circle-minus"></i></span>
+                    </button>
+                </div>
+
+                <div class="question-text">
+                    <p>
+                        There are different ways to specify units in CSS like px, em, pt, percentage (%). px(Pixel) gives fine-grained control and maintains alignment because 1 px or multiple of 1 px is guaranteed to look sharp. px is not cascade. em maintains relative size. you can have responsive fonts. Em, will cascade 1em is equal to the current font-size of the element or the browser default. If u sent font-size to 16px then 1em = 16px. The common practice is to set default body font-size to 62.5% (equal to 10px).
+
+                        pt(point) are traditionally used in print. 1pt = 1/72 inch and it is a fixed-size unit.
+
+                        %(percentage) sets font-size relative to the font size of the body. Hence, you have to set the font-size of the body to a reasonable size.
+
+
+                    </p>
+
+                </div>
+            </article>
+            <article class="question">
+                <div class="question-title">
+                    <p>
+                        What is a z-index, how does it function?
+                    </p>
+
+                    <button class="question-btn">
+                        <span class="plus-icon"><i class="fa-solid fa-circle-plus"></i></span>
+                        <span class="minus-icon"><i class="fa-solid fa-circle-minus"></i></span>
+                    </button>
+                </div>
+
+                <div class="question-text">
+                    <p>
+                        z-index is used for specifying the vertical stacking of the overlapping elements that occur at the time of its positioning. It specifies the vertical stack order of the elements positioned that helps to define how the display of elements should happen in cases of overlapping.
+
+                        The default value of this property is 0 and can be either positive or negative. Apart from 0, the values of the z-index can be:
+
+                        Auto: The stack order will be set equal to the parent.
+                        Number: The number can be positive or negative. It defines the stack order.
+                        Initial: The default value of 0 is set to the property.
+                        Inherit: The properties are inherited from the parent.
+                        The elements having a lesser value of z-index is stacked lower than the ones with a higher z-index.
+                    </p>
+
+                </div>
+            </article>
+        </div>
+    </section>
+    
+    <script src="/index.js"></script>
+</body>
+</html>
